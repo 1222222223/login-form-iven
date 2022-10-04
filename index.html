@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Dibuat Oleh CodingNepal -->
+<html lang="en" dir="ltr">
+<kepala>
+    <meta charset="utf-8">
+    <title> Form Login dan Registrasi dalam HTML | CodingNepal </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</kepala>
+<tubuh>
+    <div class="pembungkus">
+        <div class="teks judul">
+            <div class="login judul">
+                Formulir Masuk
+            </div>
+            <div class="daftar judul">
+                Formulir Pendaftaran
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="kontrol-slide">
+                <tipe input="radio" name="slide" id="login" dicentang>
+                    <tipe input="radio" name="slide" id="signup">
+                        <label for="login" class="slide login"> Login
+                        </label>
+                        <label for="signup" class="slide signup"> Daftar
+                        </label>
+                        <div class="slider-tab"> </div>
+            </div>
+            <div class="bentuk-dalam">
+                <form action="#" class="login">
+                    <kelas div="bidang">
+                        <input type="text" placeholder="Email
+                                        Address" diperlukan>
+            </div>
+            <kelas div="bidang">
+                <input type="password" placeholder="Password" diperlukan>
+        </div>
+        <div class="pass-link">
+            <a href="#"> Lupa kata sandi? </a> _ _
+        </div>
+        <div class="bidang btn">
+            <div class="btn-layer"> </div>
+            <tipe input="kirim" nilai="Masuk">
+        </div>
+        <div class="link-pendaftaran">
+            Bukan seorang anggota? <a href="">
+                Daftar sekarang </a>
+        </div>
+        </bentuk>
+        <form action="#" class="signup">
+            <kelas div="bidang">
+                <input type="text" placeholder="Email
+                                            Address" diperlukan>
+    </div>
+    <kelas div="bidang">
+        <input type="password" placeholder="Password" diperlukan>
+        </div>
+        <kelas div="bidang">
+            <tipe input="kata sandi" placeholder="Konfirmasi
+                                            kata sandi" diperlukan>
+                </div>
+                <div class="bidang btn">
+                    <div class="btn-layer"> </div>
+                    <tipe input="kirim" nilai="Daftar">
+                </div>
+                </bentuk>
+                </div>
+                </div>
+                </div>
+                <naskah>
+                    <script>
+                        const loginText = document.querySelector(".title-text .login");
+                        const loginForm = document.querySelector("form.login");
+                        const loginBtn = document.querySelector("label.login");
+                        const signupBtn = document.querySelector("label.signup");
+                        const signupLink = document.querySelector("form .signup-link a");
+                        signupBtn.onclick = (() => {
+                            loginForm.style.marginLeft = "-50%";
+                            loginText.style.marginLeft = "-50%";
+                        });
+                        loginBtn.onclick = (() => {
+                            loginForm.style.marginLeft = "0%";
+                            loginText.style.marginLeft = "0%";
+                        });
+                        signupLink.onclick = (() => {
+                            daftarBtn.klik();
+                            kembalisalah;
+                        });
+                    </script>
+</tubuh>
+
+</html>
